@@ -34,7 +34,7 @@ function somar(n1, n2) {
 console.log(somar(2, 2));
 const subtrair = (n1, n2) => n1 - n2;
 console.log(subtrair(2, 3));
-const saudacao = () => console.log("Olá!");
+const saudacao = () => console.log('Olá!');
 saudacao();
 const falarCom = (pessoa) => console.log('Ola ' + pessoa);
 falarCom('João');
@@ -60,7 +60,7 @@ function contagemRegressiva(inicio = 5, fim = inicio - 5) {
         inicio--;
         console.log(inicio);
     }
-    console.log("Fim!");
+    console.log('Fim!');
 }
 contagemRegressiva();
 contagemRegressiva(3);
@@ -99,14 +99,14 @@ const item = {
     nome: 'SSD 480GB',
     preco: 200,
     caracteristicas: {
-        w: 'Importado'
-    }
+        w: 'Importado',
+    },
 };
 const nomeItem = item.nome;
 const precoItem = item.preco;
 console.log(nomeItem);
 console.log(precoItem);
-const { nome: n, preco: p, caracteristicas: { w } } = item;
+const { nome: n, preco: p, caracteristicas: { w }, } = item;
 console.log(n);
 console.log(p);
 console.log(w);

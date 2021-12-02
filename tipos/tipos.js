@@ -18,16 +18,16 @@ minhaIdade = 27;
 console.log(typeof minhaIdade);
 // minhaIdade = '27'
 // array
-let hobbies = ["Cozinhar", "Praticar Esportes"];
+let hobbies = ['Cozinhar', 'Praticar Esportes'];
 console.log(hobbies[0]);
 console.log(typeof hobbies);
 hobbies = [100, 200, 300];
 // hobbies = 100
 console.log(hobbies);
 // tuplas
-let endereco = ["Av Principal", 99, ""];
+let endereco = ['Av Principal', 99, ''];
 console.log(endereco);
-endereco = ["Rua Importante", 1260, "Bloco C"];
+endereco = ['Rua Importante', 1260, 'Bloco C'];
 console.log(endereco);
 // enums
 var Cor;
@@ -75,7 +75,7 @@ console.log(calculo(5, 6));
 // objetos
 let usuario = {
     nome: 'João',
-    idade: 27
+    idade: 27,
 };
 console.log(usuario);
 // usuario = {}
@@ -97,7 +97,7 @@ let funcionario = {
         else {
             return 'Fora do horário!';
         }
-    }
+    },
 };
 let funcionario2 = {
     supervisores: ['Bia', 'Carlos'],
@@ -108,7 +108,7 @@ let funcionario2 = {
         else {
             return 'Fora do horário!';
         }
-    }
+    },
 };
 console.log(funcionario.supervisores);
 console.log(funcionario.baterPonto(8));
@@ -122,8 +122,8 @@ console.log(`Minha nota é ${nota}!`);
 // nota = true
 // Checando tipos
 let valor = 30;
-if (typeof valor === "number") {
-    console.log("É um number!");
+if (typeof valor === 'number') {
+    console.log('É um number!');
 }
 else {
     console.log(typeof valor);
@@ -142,7 +142,7 @@ const produto = {
         if (this.preco <= 0) {
             falha('Preco inválido!');
         }
-    }
+    },
 };
 produto.validarProduto();
 let altura = 12;
@@ -152,7 +152,7 @@ alturaOpcional = null;
 const contato1 = {
     nome: 'Fulano',
     tel1: '98765432',
-    tel2: null
+    tel2: null,
 };
 console.log(contato1.nome);
 console.log(contato1.tel1);
@@ -166,12 +166,12 @@ let contaBancaria = {
     saldo: 3456,
     depositar(valor) {
         this.saldo += valor;
-    }
+    },
 };
 let correntista = {
     nome: 'Ana Silva',
     contaBancaria: contaBancaria,
-    contatos: ['34567890', '98765432']
+    contatos: ['34567890', '98765432'],
 };
 correntista.contaBancaria.depositar(3000);
 console.log(correntista);

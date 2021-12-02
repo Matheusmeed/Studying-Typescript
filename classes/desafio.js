@@ -50,7 +50,7 @@ class Estagiario {
         }
     }
 }
-const estagiario = new Estagiario;
+const estagiario = new Estagiario();
 console.log(estagiario.primeiroNome);
 estagiario.primeiroNome = 'Le';
 console.log(estagiario.primeiroNome);
